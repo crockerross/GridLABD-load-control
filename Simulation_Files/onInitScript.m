@@ -1,6 +1,6 @@
 
-controlOn = 'yes';
-filename = 'initData_R1_1247_1.mat';  %'initData_R3_1247_3.mat'
+controlOn = 'no';
+filename = []; %'initData_R5_2500_1.mat';
 % --> only used when controlOn = 'yes'. Contains temp. initializations.
 useSineSignal = 0;
 balancingSignalName = 'regSigNorm'; % variable stored in .mat must be "refSignal"
