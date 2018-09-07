@@ -1,0 +1,3 @@
+To run the feeder simulations with closed-loop control of the air conditioner population, you will need to compile the modified gridlabd source code (see source code folder). You will also need to link MATLAB and gridlabd. 
+
+Folders beginning with "R1"-"R5" contain the simulation files for our project's "Main Study". 

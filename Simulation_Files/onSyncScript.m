@@ -1,10 +1,13 @@
+% Author: Stephanie Crocker Ross
+% Institution: University of Michigan
+% 9/7/2018
+
 
 %Chosen parameters
 if n == 1
     if strcmp(controlOn,'yes') == 1 
         startControl = 60*settlingTime; % time at which we want to start forcing TCLs
         endControl = 60*(60+settlingTime)-2; % time at which we want to stop forcing TCLs
-        %capacity = avgOffset*capacityScale; 
     end
 end
 
@@ -70,7 +73,7 @@ else switchProb = 0; % If no control is desired.
          
 end
     
-n=n+1; % "time" step that counts up for every gridlabd sync
+n=n+1; % step that counts up for every gridlabd sync
 
 
 

@@ -1,8 +1,10 @@
 function []= postGeneratorScriptCleanup(fid_name,file4)
 
-%Author: Anna and Steph
-%To modify the glm file output of the FeederGenerator matlab code.
-%The fixes are listed below. It should be generalized for feeders.
+% Authors: Anna Stuhlmacher and Stephanie Crocker Ross
+% University of Michigan
+% 9/7/2018 
+% About: Modifies/fixes the glm file (output of the FeederGenerator.m).
+
 
 %%open GLM file and establish folder for output
 filename = fid_name;

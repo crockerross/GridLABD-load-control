@@ -70,7 +70,6 @@ global clock
 #
 # Variables to export/import to workspace (by name)
 # Default is none are exported or imported
-# export houseCoolOn.is_COOL_on vvv
 
 export hvacCollector.collectorValue hvacPower
 export acCounter.collectorValue numOn
