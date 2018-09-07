@@ -1,11 +1,8 @@
 
-controlOn = 'no';
+controlOn = 'no'; % yes for active control, i.e. "regulation case"; no for "base case".
 filename = []; %'initData_R5_2500_1.mat';
-% --> only used when controlOn = 'yes'. Contains temp. initializations.
-useSineSignal = 0;
+% --> only used when controlOn = 'yes'. Contains temperature initializations.
 balancingSignalName = 'regSigNorm'; % variable stored in .mat must be "refSignal"
-
-
 
 powArray=zeros(10000,1); 
 acOnArray=zeros(10000,1); 
@@ -20,18 +17,12 @@ target = 0;
 
 if strcmp(controlOn,'yes') == 1 
     load(filename)
-    if useSineSignal == 0
-        load(balancingSignalName); 
-    end
+    load(balancingSignalName); 
+
     KI = 0;
     Kset = 1.75; 
-    %capacityScale = initData.capacityScale; 
     amp = initData.refAmplitude;
-    if useSineSignal == 1
-        freq = initData.refFrequency;
-        refSignal = amp*sin(2*pi*(1:1800)/1800*freq);
-    else refSignal = refSignal*amp;
-    end
+    refSignal = refSignal*amp;
     settlingTime = initData.settlingTime; % minutes
     avgOffset = initData.avgOffset;  
     baselineIntercept = initData.baselineIntercept;
