@@ -1,0 +1,6 @@
+Files within this folder are used to create populated feeder models. 
+
+The main script is "Feeder_Generator.m".
+Original feeder files are provided with .glm type.
+Initialization data is provided in .mat files.
+Transformer thermal data is provided in transformer.mat.
