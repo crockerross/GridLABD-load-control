@@ -1,3 +1,7 @@
+% Modifications made by Stephanie Crocker Ross (SJCR)
+% University of Michigan
+% 9/7/2018
+
 clear;
 clc;
 
@@ -19,7 +23,7 @@ TechnologyToTest=15;
     % 12 - Solar Commercial
     % 13 - Solar Combined
     % 14 - Wind Commercial
-    % 15 - Non-disruptive Load Control (Steph created)
+    % 15 - Non-disruptive Load Control (Added by SJCR)
     
 
 % Load the user configuration for different files, flags, etc.
@@ -114,7 +118,7 @@ for tax_ind=1:no_of_tax
     %1 = add thermal storage using the defaults, 2 = add thermal storage with a randomized schedule, 0 = none
     %3 = add thermal storage to all houses using defaults, 4 = add thermal storage to all houses with a randomized schedule
 
-    % Flags Steph added to script
+    % Flags SJCR added to script
     use_flags.use_control = 0; % 0 = NO CONTROL, 1 = PROBABILISTOC ON/OFF, 2 = DEADBAND SHIFT
     use_flags.use_setInitTemps = 0; 
     use_flags.use_addBaseLoad = 0;
@@ -5429,7 +5433,7 @@ for tax_ind=1:no_of_tax
         fprintf(write_file,'      secondary_dist_voltage_rise_lower_limit -0.10; //SJC edited from -0.30\n');
         fprintf(write_file,'      secondary_dist_voltage_rise_upper_limit 0.10; //SJC edited from 0.30\n\n');
 
-        fprintf(write_file,'      // Violation 8 – Power factor limits\n');
+        fprintf(write_file,'      // Violation 8 Â– Power factor limits\n');
         fprintf(write_file,'      substation_pf_lower_limit 0.85;\n\n');
 
         fprintf(write_file,'}\n\n');
