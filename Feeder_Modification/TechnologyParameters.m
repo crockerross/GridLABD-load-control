@@ -1,4 +1,7 @@
 function [data,use_flags] = TechnologyParameters(use_flags,TechToTest)
+% Data flag 15 (and associated code) added by Stephanie Crocker Ross, 
+% University of Michigan, 9/7/2018
+
 %% Time parameters 
 % simulation start and end times -> please use format: yyyy-mm-dd HH:MM:SS
     data.start_date = '2009-07-02 11:38:00';  % R1: 2009-07-02 R2: 2009-07-09
