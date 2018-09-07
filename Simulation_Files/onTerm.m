@@ -1,3 +1,6 @@
+% Author: Stephanie Crocker Ross
+% Institution: University of Michigan
+% 9/7/2018
 
 if strcmp(controlOn,'yes')
     figure(1)
