@@ -1,7 +1,10 @@
+% Author: Stephanie Crocker Ross
+% Institution: University of Michigan
+% 9/7/2018
 
 controlOn = 'no'; % yes for active control, i.e. "regulation case"; no for "base case".
 filename = []; %'initData_R5_2500_1.mat';
-% --> only used when controlOn = 'yes'. Contains temperature initializations.
+% Filename is only used when controlOn = 'yes'. Contains temperature initializations.
 balancingSignalName = 'regSigNorm'; % variable stored in .mat must be "refSignal"
 
 powArray=zeros(10000,1); 
